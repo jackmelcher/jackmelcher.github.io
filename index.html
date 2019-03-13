@@ -7,177 +7,222 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Link css stylesheets -->
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap-grid.min.css">
-    <link rel="stylesheet" href="bootstrap-4.1.3-dist/css/bootstrap-reboot.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">  
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="fontawesome-free-5.2.0-web/css/all.min.css">
-  
+    <link rel="stylesheet" href="fontawesome-free-5.2.0-web/css/all.min.css">   
+    
     <!-- Style -->
     <style>
-    #about {
-      background-color: lightblue;
+    h1{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 24pt;
+    }
+    h2{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 20pt;
+    }
+    h3{
+      font-family: 'Quicksand', sans-serif;
+      font-size: 16pt;
+    }
+    p{
+      font-family: 'Roboto', sans-serif;
+    }
+    section {
       color: black;
-      border-radius: 25px;
-      padding: 40px;
+      padding: 0px 160px 32px 160px;
       text-align: center;
     }
-    #gamedev {
-      background-color: lightgreen;
-      color: black;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
+    .fa-youtube{
+      color: #ff0000;
     }
-    #game {
-      background-color: whitesmoke;
-      color: black;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
+    .fa-twitch{
+      color: #6441A4;
     }
-    #other{
-      background-color: lightgoldenrodyellow;
-      color: black;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
+    .fa-blogger{
+      color: #FF5722;
     }
-    #youtube {
-      background-color: red;
-      color: white;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
-    }
-    #twitch {
-      background-color: rebeccapurple;
-      color: white;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
-    }
-    #blog {
-      background-color: lightskyblue;
-      color: white;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
-    }
-    #contact{
-      background-color: lightcoral;
-      color: black;
-      border-radius: 25px;
-      padding: 40px;
-      text-align: center;
-    }
+
     body{
-      background-color: grey;
+      background-image: linear-gradient(#75D5FF, #00A5FF 70%, #006DFF 90%, #002fff);
+    }
+    .profilePic {
+      border-radius: 50%;
+    }
+    .button {
+      background-color: #4CAF50; /* Green */
+      border: none; /* 2px solid #000000; */
+      border-radius: 2px;
+      color: white; /* Text Color */
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 0px 0px 16px 0px;
+      -webkit-transition-duration: 0.4s; /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+    .buttonGame {
+      background-color: #0099ff; 
+      color: white; 
+    }
+    .buttonGame:hover {
+      background-color: #5dbeff;
+      color: white;
+    }
+    .buttonYouTube {
+      background-color: #ff0000; 
+      color: white;
+    }
+    .buttonYouTube:hover {
+      background-color: #ff4040;
+      color: white;
+    }
+    .buttonTwitch {
+      background-color: #6441A4; 
+      color: white;
+    }
+    .buttonTwitch:hover {
+      background-color: #835acf; 
+      color: white;
+    }
+    .buttonBlogger {
+      background-color: #FF5722; 
+      color: white;
+    }
+    .buttonBlogger:hover {
+      background-color: #ff7c55;
+      color: white;
+    }
+    .buttonContact {
+      background-color: #ff000000; 
+      color: white;
+    }
+    .flex-container {
+      display: flex;
+      display: -webkit-flex; /* Safari */
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap; /* Safari */
+    }
+    .flex-container > div {
+      flex: 300px;
+      -webkit-flex: 300px; /* Safari */
+      background-color: #f1f1f1;
+      margin: 10px;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: 0 4px 8px 0 #00000033;
+    }
+    .flex-container > div > p{
+      padding: 4px;
+    }
+    @media all and (max-width: 768px){
+      section{
+        padding-left: 0px;
+        padding-right: 0px;
+      }
+    }
+    @media all and (min-width: 769px) and (max-width: 1280px){
+      section{
+        padding-left: 80px;
+        padding-right: 80px;
+      }
     }
     </style>
   </head>
 
   <body>
     <!-- First Container -->
-    <div class="container-fluid text-center">
-      <div id="about" class="shadow p-3 mt-3 mb-3">
-        <h3>Jack Melcher</h3>
-        <img src="img/profile-pic.png" alt="Profile Pic" class="rounded-circle" width="200px">  
-        <h3>Independent Game Developer</h3>
-        <p></p>
-      </div>
-    </div>
+    <section>
+      <h1>Jack Melcher</h1>
+      <img src="img/profile-pic.jpg" alt="Profile Pic" class="profilePic" width="200px">  
+      <h1>Independent Game Developer</h1>
+    </section>
 
     <!-- Second Container -->
-    <div class="container-fluid text-center">
-      <div id="gamedev" class="shadow p-3 mt-3 mb-3">
-        <h3>Portfolio</h3>
-        <div class="row">
-          <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-            <div id="game" class="shadow p-3 mt-3 mb-3 flex-fill">
-              <p>Project: 2D Platformer</p>
-              <img src="img/ProjectArena2.0.png" alt="Project Platformer" width="100%" class="img-responsive margin">
-              <a href="https://grandisle.itch.io/2d-action-platform-prototype-2" class="btn btn-info mt-3" role="button">Game Page</a>
-              <p class="mt-3">My first game. A 2D action platformer. Made it while learning the Unity Engine.</p>
-            </div>  
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-            <div id="game" class="shadow p-3 mt-3 mb-3 flex-fill">
-              <p>Box Shooter</p>
-              <img src="img/BoxShooter.png" alt="Box Shooter" width="100%" class="img-responsive margin">
-              <a href="https://grandisle.itch.io/unreal-first-person-shooter-prototype" class="btn btn-info mt-3" role="button">Game Page</a>
-              <p class="mt-3">First Person Arena Shooter. Fight off waves of enemies. Made it while learning the Unreal Engine 4 Engine.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-            <div id="game" class="shadow p-3 mt-3 mb-3 flex-fill">
-              <p>The Sapling</p>
-              <img src="img/Sapling.png" alt="The Sapling" width="100%" class="img-responsive margin">
-              <a href="https://grandisle.itch.io/sapling" class="btn btn-info mt-3" role="button">Game Page</a>
-              <p class="mt-3">Protect the tree. Made along side students from UCSD for the Unreal Spring 2018 Game Jam.</p>
-            </div>  
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-            <div id="game" class="shadow p-3 mt-3 mb-3 bg-white flex-fill">
-              <p>Bombus</p>
-              <img src="img/Bombus Screen.png" alt="Bombus" width="100%" class="img-responsive margin">
-              <a href="https://grandisle.itch.io/bombus" class="btn btn-info mt-3" role="button">Game Page</a>
-              <p class="mt-3">Save the Bees. 3D Collectathon. Collaborated with interns from SIE San Diego Studio as 2 week long game jam.</p>
-            </div>
-          </div>
-          <div class="col-sm-6 col-md-4 col-lg-3 d-flex">
-            <div id="game" class="shadow p-3 mt-3 mb-3 bg-white flex-fill">
-              <p>Pack Rat</p>
-              <img src="img/PackRat.png" alt="PackRat" width="100%" class="img-responsive margin">
-              <a href="https://grandisle.itch.io/ludum-dare-42-pack-rat" class="btn btn-info mt-3" role="button">Game Page</a>
-              <p class="mt-3">Pack away your stuff. 3D Survival Arcade. Made this for the Ludum Dare 42 game jam.</p>
-            </div>
-          </div>
+    <section>
+      <h2>Game Portfolio</h2>
+      <div class="flex-container">
+        <div>
+          <h3>Project: 2D Platformer</h3>
+          <img src="img/ProjectArena2.0.jpg" alt="Project Platformer" width="100%" class="img-responsive">
+          <p>My first game. A 2D action platformer. Made it while learning the Unity Engine.</p>
+          <a href="https://grandisle.itch.io/2d-action-platform-prototype-2"><button class="button buttonGame">Game Page</button></a>
+        </div>  
+        <div>
+          <h3>Box Shooter</h3>
+          <img src="img/BoxShooter.jpg" alt="Box Shooter" width="100%" class="img-responsive">
+          <p >First Person Arena Shooter. Fight off waves of enemies. Made it while learning Unreal Engine 4.</p>
+          <a href="https://grandisle.itch.io/unreal-first-person-shooter-prototype"><button class="button buttonGame">Game Page</button></a>
         </div>
-      </div>
-    </div>
+        <div>
+          <h3>The Sapling</h3>
+          <img src="img/Sapling.jpg" alt="The Sapling" width="100%" class="img-responsive">
+          <p>Protect the tree. Made along side students from UCSD for the Unreal Spring 2018 Game Jam.</p>
+          <a href="https://grandisle.itch.io/sapling"><button class="button buttonGame">Game Page</button></a>
+        </div>  
+        <div>
+          <h3>Bombus</h3>
+          <img src="img/Bombus.jpg" alt="Bombus" width="100%" class="img-responsive">
+          <p>3D Collectathon. Collaborated with interns from SIE San Diego Studio as 2 week long game jam.</p>
+          <a href="https://grandisle.itch.io/bombus"><button class="button buttonGame">Game Page</button></a>
+        </div>
+        <div>
+          <h3>Pack Rat</h3>
+          <img src="img/PackRat.jpg" alt="PackRat" width="100%" class="img-responsive">
+          <p>Pack away your stuff. 3D Survival Arcade. Made this for the Ludum Dare 42 game jam.</p>
+          <a href="https://grandisle.itch.io/ludum-dare-42-pack-rat"><button class="button buttonGame">Game Page</button></a>
+        </div>
+        <div>
+          <h3>Keeping Up with the Jonses</h3>
+          <img src="img/Jonses.jpg" alt="Jonses" width="100%" class="img-responsive">
+          <p>A short co-op adventure where a son follows in his Dad's footsteps to explore ancient runis.</p>
+          <a href="https://lessthan12bd.itch.io/keeping-up-with-the-joneses"><button class="button buttonGame">Game Page</button></a>
+        </div>
+        <div>
+          <h3>Birb</h3>
+          <img src="img/Birb.jpg" alt="Birb" width="100%" class="img-responsive">
+          <p>Katamari with a Bird's Nest. Made this for the Ludum Dare 42 game jam.</p>
+          <a href="https://globalgamejam.org/2019/games/birb"><button class="button buttonGame">Game Page</button></a>
+        </div>
+      </div>        
+    </section>        
     
     <!-- Third Container -->
-    <div class="container-fluid text-center">
-      <div id="other" class="shadow p-3 mt-3 mb-3">
-          <h3>Other Work</h3>
-          <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-              <div id="youtube" class="shadow p-3 mt-3 mb-3 flex-fill">
-                <p>YouTube</p>
-                <i class="fab fa-youtube fa-10x"></i>
-                <p><a href="https://www.youtube.com/channel/UChizbytrkcc3sm3ZGxVgrag" class="btn btn-info mt-3" role="button">My Videos</a></p>
-              </div>  
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-              <div id="twitch" class="shadow p-3 mt-3 mb-3 flex-fill">
-                <p>Twitch Tv</p>
-                <i class="fab fa-twitch fa-10x"></i>
-                <p><a href="https://www.twitch.tv/grandisle" class="btn btn-info mt-3" role="button">My Stream</a></p>
-              </div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-4 d-flex">
-              <div id="blog" class="shadow p-3 mt-3 mb-3 flex-fill">
-                <p>Blogger</p>
-                <i class="fab fa-blogger fa-10x"></i>
-                <p><a href="https://grandislestudios.blogspot.com/" class="btn btn-info mt-3" role="button">My Blog</a></p>
-              </div>  
-            </div>
+    <section>
+      <h2>Other Work</h2>
+      <div class="flex-container">
+        <div>
+            <h3>YouTube</h3>
+            <i class="fab fa-youtube fa-10x"></i>
+            <p><a href="https://www.youtube.com/channel/UChizbytrkcc3sm3ZGxVgrag"><button class="button buttonYouTube">Visit</button></a></p>
+        </div>
+        <div>
+            <h3>Twitch Tv</h3>
+            <i class="fab fa-twitch fa-10x"></i>
+            <p><a href="https://www.twitch.tv/grandisle"><button class="button buttonTwitch">Visit</button></a></p>
+        </div>
+        <div>
+            <h3>Blogger</h3>
+            <i class="fab fa-blogger fa-10x"></i>
+            <p><a href="https://grandislestudios.blogspot.com/"><button class="button buttonBlogger">Visit</button></a></p> 
         </div>
       </div>
-    </div>
+    </section>
       
     <!-- Fourth Container -->
-    <div class="container-fluid text-center">
-      <div id="about" class="shadow p-3 mt-3 mb-3">
-        <h3>Contact Info</h3>
-        <a href="mailto:melcher.jack@gmail.com" style="color: black"> <i class="fas fa-envelope"></i> <p>melcher.jack@gmail.com</p> </a>
-        <a href="https://www.linkedin.com/in/jack-melcher-b8399a138" style="color: black"> <i class="fab fa-linkedin-in"></i> <p>Linkedin</p> </a>
-          <a href="https://github.com/jackmelcher" style="color: black"> <i class="fab fa-github"></i> <p>Github</p> </a>
+    <section>
+      <h2 class="buttonContact">Contact Info</h2>
+      <div>
+        <a href="mailto:melcher.jack@gmail.com"><button class="button buttonContact"><i class="fas fa-envelope"></i><p>Email</p></button></a>
+        <a href="https://www.linkedin.com/in/jack-melcher-b8399a138"><button class="button buttonContact"><i class="fab fa-linkedin-in"></i><p>Linkedin</p></button></a>
+        <a href="https://github.com/jackmelcher"><button class="button buttonContact"><i class="fab fa-github"></i><p>Github</p></button></a>
       </div>
-    </div>
+    </section>
 
   </body>
 </html>
