@@ -109,8 +109,11 @@
       -webkit-flex-wrap: wrap; /* Safari */
     }
     .flex-container > div {
-      flex: 300px;
-      -webkit-flex: 300px; /* Safari */
+      min-width: 200px;
+      max-width: 600px;
+      flex-basis: 300px; /* default value */
+      flex-grow: 1;
+      -webkit-flex-grow: 1; /* Safari */
       background-color: #f1f1f1;
       margin: 10px;
       text-align: center;
