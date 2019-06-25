@@ -16,12 +16,14 @@
     <!-- Style -->
     <style>
     h1{
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Quicksand:500', sans-serif;
       font-size: 24pt;
+      
     }
     h2{
       font-family: 'Quicksand', sans-serif;
       font-size: 20pt;
+      
     }
     h3{
       font-family: 'Quicksand', sans-serif;
@@ -46,7 +48,13 @@
     }
 
     body{
-      background-image: linear-gradient(#75D5FF, #00A5FF 70%, #006DFF 90%, #002fff);
+      background-image: linear-gradient(#00A5FF 70%, #006DFF 90%, #002fff);
+    }
+    .headerTextcolorA{
+      color: #ffffff;
+    }
+    .headerTextcolorB{
+      color: #000000;
     }
     .profilePic {
       border-radius: 50%;
@@ -111,7 +119,7 @@
     .flex-container > div {
       min-width: 200px;
       max-width: 600px;
-      flex-basis: 300px; /* default value */
+      flex-basis: 200px; /* default value */
       flex-grow: 1;
       -webkit-flex-grow: 1; /* Safari */
       background-color: #f1f1f1;
@@ -139,40 +147,62 @@
   </head>
 
   <body>
-    <!-- First Container -->
     <section>
-      <h1>Jack Melcher</h1>
+      <h1 class="headerTextcolorA">Jack Melcher</h1>
       <img src="img/profile-pic.jpg" alt="Profile Pic" class="profilePic" width="200px">  
-      <h1>Independent Game Developer</h1>
+      <h1 class="headerTextcolorA"> QA Tester, Game Developer, Content Creator</h1>
     </section>
 
-    <!-- Second Container -->
+    <section style="background-color: white; padding-top:1px; padding-bottom:10px">
+      <h2 class="headerTextcolorB">About</h2>
+      <p style="line-height: 1.6;">
+        Hi, my name is Jack Melcher.<br>
+        I grew up playing video games and decided to pursue a career in the Games Industry.<br><br>
+        Currently, I am employed as a Game Tester for Experis Game Solutions.<br>
+        I performed QA on Microsoft Studios games and help improve the overall quality of the product.<br><br>
+        In my spare time, I develop games in Unreal Engine 4 as a self-taught Game Developer.<br>
+        I have developed a couple of solo projects as well as participated in a handful of game jams.<br><br>
+        New games are constantly being published by other indie developers.<br>
+        So occasionaly, I will record gameplay of indie games and showcase them on my YouTube channel.<br>
+      </p> 
+    </section>
+
     <section>
-      <h2>Game Portfolio</h2>
+      <h1 class="headerTextcolorA">Game Portfolio</h1>
+      <h2 class="headerTextcolorA">Solo Projects</h2>
       <div class="flex-container">
+        <div>
+          <h3>Ultimate Dodgeball (WIP)</h3>
+          <img src="img/Dodgeball.jpg" alt="Dodgeball" width="100%" class="img-responsive">
+          <p>A Third Person Competitve Multiplayer Game. Throw Dodgeballs and knock your opponets off the Arena.</p>
+          <a href="https://grandisle.itch.io/unreal-first-person-shooter-prototype"><button class="button buttonGame">Game Page</button></a>
+        </div>
+        <div>
+          <h3>Box Shooter</h3>
+          <img src="img/BoxShooter.jpg" alt="Box Shooter" width="100%" class="img-responsive">
+          <p>First Person Arena Shooter. Fight off waves of enemies. Made while learning Unreal Engine 4.</p>
+          <a href="https://grandisle.itch.io/unreal-first-person-shooter-prototype"><button class="button buttonGame">Game Page</button></a>
+        </div>
         <div>
           <h3>Project: 2D Platformer</h3>
           <img src="img/ProjectArena2.0.jpg" alt="Project Platformer" width="100%" class="img-responsive">
           <p>My first game. A 2D action platformer. Made it while learning the Unity Engine.</p>
           <a href="https://grandisle.itch.io/2d-action-platform-prototype-2"><button class="button buttonGame">Game Page</button></a>
         </div>  
+      </div>        
+
+      <h2 class="headerTextcolorA">Game Jams</h2>
+      <div class="flex-container">
         <div>
-          <h3>Box Shooter</h3>
-          <img src="img/BoxShooter.jpg" alt="Box Shooter" width="100%" class="img-responsive">
-          <p >First Person Arena Shooter. Fight off waves of enemies. Made it while learning Unreal Engine 4.</p>
-          <a href="https://grandisle.itch.io/unreal-first-person-shooter-prototype"><button class="button buttonGame">Game Page</button></a>
-        </div>
-        <div>
-          <h3>The Sapling</h3>
-          <img src="img/Sapling.jpg" alt="The Sapling" width="100%" class="img-responsive">
-          <p>Protect the tree. Made along side students from UCSD for the Unreal Spring 2018 Game Jam.</p>
-          <a href="https://grandisle.itch.io/sapling"><button class="button buttonGame">Game Page</button></a>
-        </div>  
-        <div>
-          <h3>Bombus</h3>
-          <img src="img/Bombus.jpg" alt="Bombus" width="100%" class="img-responsive">
-          <p>3D Collectathon. Collaborated with interns from SIE San Diego Studio as 2 week long game jam.</p>
-          <a href="https://grandisle.itch.io/bombus"><button class="button buttonGame">Game Page</button></a>
+          <h3>Birb</h3>
+          <img src="img/Birb.jpg" alt="Birb" width="100%" class="img-responsive">
+          <p>Katamari with a Bird's Nest. Made this with students from UAT for Global Game Jam 2019.</p>
+          <a href="https://globalgamejam.org/2019/games/birb"><button class="button buttonGame">Game Page</button></a>
+        </div>        <div>
+          <h3>Keeping Up with the Jonses</h3>
+          <img src="img/Jonses.jpg" alt="Jonses" width="100%" class="img-responsive">
+          <p>A short co-op adventure where a son follows in his Dad's footsteps to explore ancient runis.</p>
+          <a href="https://lessthan12bd.itch.io/keeping-up-with-the-joneses"><button class="button buttonGame">Game Page</button></a>
         </div>
         <div>
           <h3>Pack Rat</h3>
@@ -181,29 +211,32 @@
           <a href="https://grandisle.itch.io/ludum-dare-42-pack-rat"><button class="button buttonGame">Game Page</button></a>
         </div>
         <div>
-          <h3>Keeping Up with the Jonses</h3>
-          <img src="img/Jonses.jpg" alt="Jonses" width="100%" class="img-responsive">
-          <p>A short co-op adventure where a son follows in his Dad's footsteps to explore ancient runis.</p>
-          <a href="https://lessthan12bd.itch.io/keeping-up-with-the-joneses"><button class="button buttonGame">Game Page</button></a>
+          <h3>Bombus</h3>
+          <img src="img/Bombus.jpg" alt="Bombus" width="100%" class="img-responsive">
+          <p>3D Collectathon. Collaborated with interns from SIE San Diego Studio as 2 week long game jam.</p>
+          <a href="https://grandisle.itch.io/bombus"><button class="button buttonGame">Game Page</button></a>
         </div>
         <div>
-          <h3>Birb</h3>
-          <img src="img/Birb.jpg" alt="Birb" width="100%" class="img-responsive">
-          <p>Katamari with a Bird's Nest. Made this for the Ludum Dare 42 game jam.</p>
-          <a href="https://globalgamejam.org/2019/games/birb"><button class="button buttonGame">Game Page</button></a>
+          <h3>The Sapling</h3>
+          <img src="img/Sapling.jpg" alt="The Sapling" width="100%" class="img-responsive">
+          <p>Protect the tree. Made along side students from UCSD for the Unreal Spring 2018 Game Jam.</p>
+          <a href="https://grandisle.itch.io/sapling"><button class="button buttonGame">Game Page</button></a>
         </div>
       </div>        
-    </section>        
-    
-    <!-- Third Container -->
-    <section>
-      <h2>Other Work</h2>
+    </section>    
+
+    <section style="background-color: white; padding-top: 10px; padding-bottom: 10px">
+      <h1 class="headerTextcolorB">Youtube</h1>
+            <i class="fab fa-youtube fa-10x" style="margin-top: -30px;"></i>
+            <p><a href="https://www.youtube.com/channel/UChizbytrkcc3sm3ZGxVgrag"><button class="button buttonYouTube">Visit my Channel</button></a></p>
+      <!--
       <div class="flex-container">
         <div>
             <h3>YouTube</h3>
             <i class="fab fa-youtube fa-10x"></i>
             <p><a href="https://www.youtube.com/channel/UChizbytrkcc3sm3ZGxVgrag"><button class="button buttonYouTube">Visit</button></a></p>
         </div>
+        
         <div>
             <h3>Twitch Tv</h3>
             <i class="fab fa-twitch fa-10x"></i>
@@ -215,11 +248,11 @@
             <p><a href="https://grandislestudios.blogspot.com/"><button class="button buttonBlogger">Visit</button></a></p> 
         </div>
       </div>
+      -->
     </section>
       
-    <!-- Fourth Container -->
     <section>
-      <h2 class="buttonContact">Contact Info</h2>
+      <h2 class="headerTextcolorA">Contact Info</h2>
       <div>
         <a href="mailto:melcher.jack@gmail.com"><button class="button buttonContact"><i class="fas fa-envelope"></i><p>Email</p></button></a>
         <a href="https://www.linkedin.com/in/jack-melcher-b8399a138"><button class="button buttonContact"><i class="fab fa-linkedin-in"></i><p>Linkedin</p></button></a>
