@@ -11,7 +11,7 @@
     <link href="https://fonts.googleapis.com/css?family=Quicksand|Roboto" rel="stylesheet">  
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="fontawesome-free-5.2.0-web/css/all.min.css">   
+    <link rel="stylesheet" href="fontawesome-free-5.12.1-web/css/all.min.css">   
     
     <!-- Style -->
     <style>
@@ -26,7 +26,7 @@
       
     }
     h3{
-      font-family: 'Quicksand', sans-serif;
+      font-family: 'Roboto', sans-serif;
       font-size: 16pt;
     }
     p{
@@ -46,6 +46,9 @@
     .fa-blogger{
       color: #FF5722;
     }
+    .fa-mixer{
+      color: #1FBAED;
+    }
 
     body{
       background-image: linear-gradient(#00A5FF 70%, #006DFF 90%, #002fff);
@@ -64,7 +67,7 @@
       border: none; /* 2px solid #000000; */
       border-radius: 2px;
       color: white; /* Text Color */
-      padding: 16px 32px;
+      padding: 16px 16px;
       text-align: center;
       text-decoration: none;
       display: inline-block;
@@ -96,6 +99,14 @@
     }
     .buttonTwitch:hover {
       background-color: #835acf; 
+      color: white;
+    }
+    .buttonMixer {
+      background-color: #1FBAED; 
+      color: white;
+    }
+    .buttonMixer:hover {
+      background-color: #52C7EA; 
       color: white;
     }
     .buttonBlogger {
@@ -149,22 +160,35 @@
   <body>
     <section>
       <h1 class="headerTextcolorA">Jack Melcher</h1>
-      <img src="img/profile-pic.jpg" alt="Profile Pic" class="profilePic" width="200px">  
+      <img src="img/Logo.png" alt="Logo" class="profilePic" width="200px">  
       <h1 class="headerTextcolorA"> QA Tester, Game Developer, Content Creator</h1>
     </section>
 
     <section style="background-color: white; padding-top:1px; padding-bottom:10px">
-      <h2 class="headerTextcolorB">About</h2>
-      <p style="line-height: 1.6;">
-        Hi, my name is Jack Melcher.<br>
-        I grew up playing video games and decided to pursue a career in the Games Industry.<br><br>
-        Currently, I am employed as a Game Tester for Experis Game Solutions,<br>
-        performing Quality Assurance for Microsoft Xbox Game Studios titles.<br><br>
-        In my spare time, I develop games in Unreal Engine 4 as a self-taught Game Developer.<br>
-        I have developed a couple of solo projects as well as participated in a handful of game jams.<br><br>
-        New games are constantly being published by other indie developers.<br>
-        So occasionaly, I will record gameplay of indie games and showcase them on my YouTube channel.<br>
-      </p> 
+      <h1 class="headerTextcolorB">About</h1>
+      <div class="flex-container">
+        <div>
+          <img src="img/profile-pic.jpg" alt="Profile Pic" class="profilePic" width="200px"> <br>
+          <img src="img/Experis.png" alt="Experis Game Solutions" width="250px">
+          <img src="img/AoE2DE.jpg" alt="Age of Empires 2: Definitive Edition" width="100px">  <br>
+          <img src="img/UCI.png" alt="University of California Irvine" width="125x">
+
+        </div>
+        <div>
+          <p style="line-height: 1.6;">
+            Hi, my name is Jack Melcher.<br>
+            I grew up playing video games and decided to pursue a career in the Games Industry.<br><br>
+            I attended college at the University of California, Irvine and earned a Bachelor of Science in Computer Engineering.
+            While I wasn't studying, I 
+            Currently, I am employed as a Game Tester for Experis Game Solutions,<br>
+            performing Quality Assurance for Microsoft Xbox Game Studios titles.<br><br>
+            In my spare time, I develop games in Unreal Engine 4 as a self-taught Game Developer.<br>
+            I have developed a couple of solo projects as well as participated in a handful of game jams.<br><br>
+            New games are constantly being published by other indie developers.<br>
+            So occasionaly, I will record gameplay of indie games and showcase them on my YouTube channel.<br>
+          </p> 
+        </div>  
+      </div>  
     </section>
 
     <section>
@@ -185,7 +209,7 @@
         </div>
         <div>
           <h3>Project: 2D Platformer</h3>
-          <img src="img/ProjectArena2.0.jpg" alt="Project Platformer" width="100%" class="img-responsive">
+          <img src="img/ProjectArena2.0.png" alt="Project Platformer" width="100%" class="img-responsive">
           <p>My first game. A 2D action platformer. Made it while learning the Unity Engine.</p>
           <a href="https://grandisle.itch.io/2d-action-platform-prototype-2"><button class="button buttonGame">Game Page</button></a>
         </div>  
@@ -202,7 +226,8 @@
           <h3>Keeping Up with the Jonses</h3>
           <img src="img/Jonses.jpg" alt="Jonses" width="100%" class="img-responsive">
           <p>A short co-op adventure where a son follows in his Dad's footsteps to explore ancient runis.</p>
-          <a href="https://lessthan12bd.itch.io/keeping-up-with-the-joneses"><button class="button buttonGame">Game Page</button></a>
+          <a href="https://lessthan12bd.itch.io/keeping-up-with-the-joneses"><button class="button buttonGame"><i class="fab fa-itch-io" style="margin-right: 5px;"></i>Game Page</button></a>
+          <a href="https://github.com/djooryabi/KeepingUpWithTheJoneses"><button class="button buttonGame"><i class="fab fa-github" style="margin-right: 5px;"></i>Source</button></a>
         </div>
         <div>
           <h3>Pack Rat</h3>
@@ -225,10 +250,25 @@
       </div>        
     </section>    
 
-    <section style="background-color: white; padding-top: 10px; padding-bottom: 10px">
-      <h1 class="headerTextcolorB">Youtube</h1>
-            <i class="fab fa-youtube fa-10x" style="margin-top: -30px;"></i>
-            <p><a href="https://www.youtube.com/channel/UChizbytrkcc3sm3ZGxVgrag"><button class="button buttonYouTube">Visit my Channel</button></a></p>
+    <section style="background-color: #0c2ad3; padding-top: 10px; padding-bottom: 10px">
+      <div class="flex-container">
+        <div>
+          <h1 class="headerTextcolorB">YouTube</h1>
+          <i class="fab fa-youtube fa-10x" style="margin-top: -30px;"></i>
+          <p><a href="https://www.youtube.com/channel/UChizbytrkcc3sm3ZGxVgrag"><button class="button buttonYouTube">Visit my Channel</button></a></p>
+        </div>
+        <div>
+          <h1 class="headerTextcolorB">Twitch Tv</h1>
+          <i class="fab fa-twitch fa-10x" style="margin-top: -30px;"></i>
+          <p><a href="https://www.twitch.tv/grandisle"><button class="button buttonTwitch">Visit</button></a></p>
+        </div>
+        <div>
+          <h1 class="headerTextcolorB">Mixer</h1>
+          <i class="fab fa-mixer fa-10x" style="margin-top: -30px;"></i>
+          <p><a href="https://www.mixer.com/grandisle"><button class="button buttonMixer">Visit</button></a></p>
+        </div>
+      </div>
+
       <!--
       <div class="flex-container">
         <div>
@@ -255,8 +295,9 @@
       <h2 class="headerTextcolorA">Contact Info</h2>
       <div>
         <a href="mailto:melcher.jack@gmail.com"><button class="button buttonContact"><i class="fas fa-envelope"></i><p>Email</p></button></a>
-        <a href="https://www.linkedin.com/in/jack-melcher-b8399a138"><button class="button buttonContact"><i class="fab fa-linkedin-in"></i><p>Linkedin</p></button></a>
-        <a href="https://github.com/jackmelcher"><button class="button buttonContact"><i class="fab fa-github"></i><p>Github</p></button></a>
+        <a href="https://www.linkedin.com/in/jack-melcher"><button class="button buttonContact"><i class="fab fa-linkedin-in"></i><p>Linkedin</p></button></a>
+        <a href="https://github.com/jackmelcher"><button class="button buttonContact"><i class="fab fa-github"></i><p>GitHub</p></button></a>
+        <a href="https://gitlab.com/jackmelcher"><button class="button buttonContact"><i class="fab fa-gitlab"></i><p>GitLab</p></button></a>
       </div>
     </section>
 
