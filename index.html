@@ -23,208 +23,27 @@
     <meta name="theme-color" content="#ffffff">
 
     <!-- Style -->
-    <style>
-    h1{
-      font-family: 'Quicksand:500', sans-serif;
-      font-size: 24pt;
-      
-    }
-    h2{
-      font-family: 'Quicksand', sans-serif;
-      font-size: 20pt;
-      
-    }
-    h3{
-      font-family: 'Roboto', sans-serif;
-      font-size: 16pt;
-    }
-    p{
-      font-family: 'Roboto', sans-serif;
-      margin-left: 10px;
-      margin-right: 10px;
-    }
-    section {
-      color: black;
-      padding: 0px 160px 32px 160px;
-      text-align: center;
-    }
-    .fa-youtube{
-      color: #ff0000;
-    }
-    .fa-twitch{
-      color: #6441A4;
-    }
-    .fa-blogger{
-      color: #FF5722;
-    }
-    .fa-mixer{
-      color: #1FBAED;
-    }
-
-    body{
-      background-image: linear-gradient(#00A5FF 70%, #006DFF 90%, #002fff);
-    }
-    .textOutline{
-      text-shadow: -1px -1px 0 #000,
-    1px -1px 0 #000,
-    -1px 1px 0 #000,
-    1px 1px 0 #000;  
-    /*-webkit-text-stroke: 1px black;*/
-    }
-    .textShadow{
-      text-shadow: 2px 2px 4px #00000033;
-    }
-    .headerTextcolorA{
-      color: #ffffff;
-    }
-    .headerTextcolorB{
-      color: #000000;
-    }
-    .profilePic {
-      border-radius: 50%;
-    }
-    .LogoPic {
-      border-radius: 5%;
-      border: 10px solid #f1f1f1;
-      box-shadow: 0 4px 8px 0 #00000033;
-    }
-    .button {
-      background-color: #4CAF50; /* Green */
-      border: none; /* 2px solid #000000; */
-      border-radius: 2px;
-      color: white; /* Text Color */
-      padding: 16px 16px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-      font-size: 16px;
-      margin: 0px 0px 16px 0px;
-      -webkit-transition-duration: 0.4s; /* Safari */
-      transition-duration: 0.4s;
-      cursor: pointer;
-    }
-    .buttonGame {
-      background-color: #0099ff; 
-      color: white; 
-    }
-    .buttonGame:hover {
-      background-color: #5dbeff;
-      color: white;
-    }
-    .buttonContent{
-      background-color: #f1f1f1;
-      color: black; /* Text Color */
-      margin: 0px 0px 0px 0px;
-      font-size: 12px;
-      padding: 0px 16px;
-    }
-    .buttonYouTube {
-      background-color: #ff0000; 
-      color: white;
-    }
-    .buttonYouTube:hover {
-      background-color: #ff4040;
-      color: white;
-    }
-    .buttonTwitch {
-      background-color: #6441A4; 
-      color: white;
-    }
-    .buttonTwitch:hover {
-      background-color: #835acf; 
-      color: white;
-    }
-    .buttonMixer {
-      background-color: #1FBAED; 
-      color: white;
-    }
-    .buttonMixer:hover {
-      background-color: #52C7EA; 
-      color: white;
-    }
-    .buttonBlogger {
-      background-color: #FF5722; 
-      color: white;
-    }
-    .buttonBlogger:hover {
-      background-color: #ff7c55;
-      color: white;
-    }
-    .buttonContact {
-      background-color: #ff000000; 
-      color: white;
-    }
-    .flex-container {
-      display: flex;
-      display: -webkit-flex; /* Safari */
-      flex-wrap: wrap;
-      -webkit-flex-wrap: wrap; /* Safari */
-    }
-    .flex-container > div {
-      min-width: 200px;
-      max-width: 800px;
-      flex-basis: 200px; /* default value */
-      flex-grow: 1;
-      -webkit-flex-grow: 1; /* Safari */
-      background-color: #f1f1f1;
-      margin: 10px;
-      text-align: center;
-      border-radius: 4px;
-      box-shadow: 0 4px 8px 0 #00000033;
-    }
-    .flex-container > div > p{
-      padding: 4px;
-    }
-    .chip-container{
-      margin-left: 4px;
-      margin-right: 4px;
-    }
-    .chip {
-      display: inline-block;
-      margin-top: 8px;
-      margin-bottom: -8px;
-      padding: 0 16px;
-      font-size: 20px;
-      line-height: 30px;
-      border-radius: 25px;
-      background-color: #0099ff;
-      color: white; 
-      font-family: 'Roboto', sans-serif;
-    }
-    .ccimg{
-      width: 100%;
-    }
-    @media all and (max-width: 768px){
-      section{
-        padding-left: 0px;
-        padding-right: 0px;
-      }
-    }
-    @media all and (min-width: 769px) and (max-width: 1280px){
-      section{
-        padding-left: 80px;
-        padding-right: 80px;
-      }
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
   </head>
 
   <body>
     <section>
       <h1 class="headerTextcolorA textShadow">Jack Melcher</h1>
       <img src="img/Logo.png" alt="Logo" class="LogoPic" width="200px">  
-      <h1 class="headerTextcolorA textShadow"> QA Tester, Game Developer, Content Creator</h1>
+      <h1 class="headerTextcolorA textShadow"> QA Tester, Game Developer, Web Developer, Content Creator</h1>
     </section>
 
     <section style="background-color: #f1f1f1; padding-top:1px; padding-bottom:20px">
       <h1 class="headerTextcolorB">About</h1>
       <div class="flex-container">
-        <div style="max-width: 500px;      box-shadow: 0 0 0 0 #00000033;">
-          <img src="img/profile-pic.jpg" alt="Profile Pic" class="profilePic" width="200px"> <br>
-          <h3>Professional Experience</h3>
-          <p>Test Associate</p>
+        <div style="max-width: 500px; box-shadow: 0 0 0 0 #00000033;">
+          <img src="img/profile-pic.jpg" alt="Profile Pic" class="profilePic" width="200px" style="box-shadow: 0 4px 8px 0 #00000033;"> 
+          <br><br>
+          <a href="files/resume.pdf" ><button class="button buttonGame"><i class="fas fa-file" style="margin-right: 5px;"></i>Resume</button></a>
+          <h3 style="margin-top: -2px;">Professional Experience</h3>
+          <p>Test Associate III</p>
           <img src="img/Experis.png" alt="Experis Game Solutions" style="padding-right: 20px; max-width: 250px; height: auto;">
-          <img src="img/AoE2DE.jpg" alt="Age of Empires 2: Definitive Edition" width="100px"style="padding-top: 0px;">  <br>
+          <img src="img/AoE2DE.jpg" alt="Age of Empires 2: Definitive Edition" width="80px"style="padding-top: 0px;">  <br>
           <h3>Education</h3>
           <p>Bachelor of Science in Computer Engineering</p>
           <img src="img/UCI.png" alt="University of California Irvine" style="padding-top: 0px; max-width: 100%;width: 250px; height: auto;">
@@ -241,6 +60,9 @@
             As a Game Developer, I'm currently working on my third solo project "Ultimate Dodgeball" using Unreal Engine 4.
             I've participated in several Game Jams, having collaborated with students as well professionals in the industry.
             I also regularly attend meetings with local chapters of the International Game Developers Association.
+            <br><br>
+            As a Web Developer, I created GameDevelop.io, a resource website for game development.
+            My goal is to provide anyone who visits the site with all the necessary information and tools to be a game developer.
             <br><br>
             As a Content Creator, I cover indie games hosted on websites such as itch.io and Gamejolt.
             I also stream games and provide entertaining and informative commentary on YouTube, Twitch, and Mixer.
@@ -425,7 +247,25 @@
         </div>
       </div>        
     </section>    
-
+    <section>
+      <h1 class="headerTextcolorA textShadow">Web Development</h1>
+      <div class="flex-container">
+        <div style="max-width: 400px;">
+          <h3>GameDevelop.io</h3>
+          <img src="img/gdlogo.svg" alt="Dodgeball" width="33%" class="img-responsive">
+          <br>
+          <div class="chip">
+            Founder
+          </div>
+          <div class="chip">
+            Programmer
+          </div>
+          <p>A Resource Website for Game Development.</p>
+          <a href="https://www.gamedevelop.io/"><button class="button buttonGame"><i class="fas fa-globe" style="margin-right: 5px;"></i>Visit GameDevelop.io</button></a>
+          <a href="https://github.com/jackmelcher/codevelup"><button class="button buttonGame"><i class="fab fa-github" style="margin-right: 5px;"></i>Source</button></a>
+        </div>
+      </div>
+    </section>
 
     <section style="background-color: #f1f1f1; padding-top: 0px; padding-bottom: 10px">
       <div class="flex-container">
@@ -507,7 +347,7 @@
       </div>
       -->
     </section>
-      
+    
     <section>
       <h2 class="headerTextcolorA textShadow">Contact Info</h2>
       <div>

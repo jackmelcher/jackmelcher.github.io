@@ -1,0 +1,181 @@
+h1{
+  font-family: 'Quicksand:500', sans-serif;
+  font-size: 24pt;
+}
+h2{
+  font-family: 'Quicksand', sans-serif;
+  font-size: 20pt;
+}
+h3{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16pt;
+}
+p{
+  font-family: 'Roboto', sans-serif;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+section {
+  color: black;
+  padding: 0px 160px 32px 160px;
+  text-align: center;
+}
+.fa-youtube{
+  color: #ff0000;
+}
+.fa-twitch{
+  color: #6441A4;
+}
+.fa-blogger{
+  color: #FF5722;
+}
+.fa-mixer{
+  color: #1FBAED;
+}
+
+body{
+  background-image: linear-gradient(#00A5FF 70%, #006DFF 90%, #002fff);
+}
+.textOutline{
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;  
+  /*-webkit-text-stroke: 1px black;*/
+}
+.textShadow{
+  text-shadow: 2px 2px 4px #00000033;
+}
+.headerTextcolorA{
+  color: #ffffff;
+}
+.headerTextcolorB{
+  color: #000000;
+}
+.profilePic {
+  border-radius: 50%;
+}
+.LogoPic {
+  border-radius: 5%;
+  border: 10px solid #f1f1f1;
+  box-shadow: 0 4px 8px 0 #00000033;
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none; /* 2px solid #000000; */
+  border-radius: 2px;
+  color: white; /* Text Color */
+  padding: 16px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px 0px 16px 0px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.buttonGame {
+  background-color: #0099ff; 
+  color: white; 
+}
+.buttonGame:hover {
+  background-color: #5dbeff;
+  color: white;
+}
+.buttonContent{
+  background-color: #f1f1f1;
+  color: black; /* Text Color */
+  margin: 0px 0px 0px 0px;
+  font-size: 12px;
+  padding: 0px 16px;
+}
+.buttonYouTube {
+  background-color: #ff0000; 
+  color: white;
+}
+.buttonYouTube:hover {
+  background-color: #ff4040;
+  color: white;
+}
+.buttonTwitch {
+  background-color: #6441A4; 
+  color: white;
+}
+.buttonTwitch:hover {
+  background-color: #835acf; 
+  color: white;
+}
+.buttonMixer {
+  background-color: #1FBAED; 
+  color: white;
+}
+.buttonMixer:hover {
+  background-color: #52C7EA; 
+  color: white;
+}
+.buttonBlogger {
+  background-color: #FF5722; 
+  color: white;
+}
+.buttonBlogger:hover {
+  background-color: #ff7c55;
+  color: white;
+}
+.buttonContact {
+  background-color: #ff000000; 
+  color: white;
+}
+.flex-container {
+  display: flex;
+  display: -webkit-flex; /* Safari */
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; /* Safari */
+  justify-content:center;
+}
+.flex-container > div {
+  min-width: 200px;
+  max-width: 800px;
+  flex-basis: 200px; /* default value */
+  flex-grow: 1;
+  -webkit-flex-grow: 1; /* Safari */
+  background-color: #f1f1f1;
+  margin: 10px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 4px 8px 0 #00000033;
+}
+.flex-container > div > p{
+  padding: 4px;
+}
+.chip-container{
+  margin-left: 4px;
+  margin-right: 4px;
+}
+.chip {
+  display: inline-block;
+  margin-top: 8px;
+  margin-bottom: -8px;
+  padding: 0 16px;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 25px;
+  background-color: #0099ff;
+  color: white; 
+  font-family: 'Roboto', sans-serif;
+}
+.ccimg{
+  width: 100%;
+}
+@media all and (max-width: 768px){
+  section{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+@media all and (min-width: 769px) and (max-width: 1280px){
+  section{
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
